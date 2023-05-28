@@ -1,0 +1,58 @@
+/* body標籤裡的字型都是Arial */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+/* h1標籤裡顏色為黑，粗體字 */
+h1 {
+    color: black;
+    font-weight: bold;
+}
+
+/* h2標籤裡顏色為黑，粗體字且不自動換行 */
+h2 {
+    color: black;
+    font-weight: bold;
+    display: inline-block;
+}
+
+/* table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 8px;
+    border-bottom: 1px solid #ccc;
+} */
+
+/* hr顏色為黑尺寸為10 */
+hr {
+    color: black;
+    size: 10;
+}
+
+/* 連結的特效 */
+a:link {
+    color: blue;
+}
+
+a:visited {
+    color: blueviolet;
+}
+
+a:hover {
+    color: aqua;
+}
+
+a:active {
+    color: gainsboro;
+}
+
+
+.title-container {
+    display: flex;
+    justify-content: space-between;
+}
