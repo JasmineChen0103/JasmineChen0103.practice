@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>About Jasmine</title>
+  <link rel="stylesheet" href="mystyle.css">
+  <img id="photo" style="display: none;" src="images/jasmine.jpg" alt="照片">
+
+  <!-- 
+2種JS:
+1.點下buttom後show照片
+2.window.onload():點下確定按鈕後才顯示網頁內容
+ -->
+
+  <script>
+    function showPhoto() {
+      var photoElement = document.getElementById("photo");
+      photoElement.style.display = "block";
+      photoElement.src = "images/jasmine.jpg";
+    }
+
+    onload = showmsg();
+    function showmsg() {
+      alert('Hi there. I am Jasmine. Have a nice day!');
+    }
+  </script>
+</head>
+
+<!-- 
+10種以上的html標籤類型:
+1.<div>
+2.<p>
+3.<a>
+4.<h1>
+5.<ul>
+6.<hr>
+7.<br>
+8.<bottom>
+9.<li>
+10.<h2>
+     -->
+
+<!-- 
+5種以上CSS特效:
+1.body標籤裡的字型都是Arial
+2.h1標籤裡顏色為黑，粗體字
+3.h2標籤裡顏色為黑，粗體字且不自動換行
+4.hr顏色為黑尺寸為10
+5.連結的特效(原始為藍色 點過變紫色 滑鼠在上面是淺藍色 點下去是灰色)
+ -->
+
+<body>
+  <div>
+    <h1 style="text-align: center;">JASMINE CHEN</h1>
+    <p style="text-align: center;">Mobile: +886965630502 Email: jamine103.cym@gmail.com IG: <a
+        href="https://www.instagram.com/jasmine_cym/" target="_blank">jasmine_cym</a></p>
+    <h1>EDUCATION</h1>
+    <hr>
+    <div class="title-container">
+      <h2 style="text-align: left;">National Central University</h2>
+      <h2 style="text-align: right;">Taoyuan City, Taiwan</h2>
+    </div>
+    <div class="title-container">
+      <p style="text-align: left;">Department of Information Management</p>
+      <p style="text-align: right;">Sep 2021-present</p>
+    </div>
+    <ul>
+      <li>Cumulative GPA: 4.0/4.0</li>
+      <li>Relevant Coursework: Data Structure, Database Management Systems, Statistics, etc.</li>
+    </ul>
+    <h1>SKILLS</h1>
+    <hr>
+    <h2>Language: </h2>
+    <p>Mandarin (Native) and English (TOEIC golden certificate)</p>
+    <h1>More About ME!!!</h1>
+    <hr>
+    <button type="button" onclick="showPhoto()">click to see my photo</button>
+  </div>
+
+</body>
+
+</html>
